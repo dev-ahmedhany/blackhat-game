@@ -79,7 +79,7 @@ int main()
     evilBall.setOrigin(20, 20);
     evilBall.setPosition(100, 100);
     
-    evilTexture.loadFromFile("/Users/ahmedhany/projects/test app/test2/images/evel.jpg");
+    evilTexture.loadFromFile("/Users/ahmedhany/projects/test app/test2/test2/images/evel.jpg");
     evilPlayer.setTexture(evilTexture);
     evilPlayer.setOrigin(size, size);
     evilPlayer.setPosition(size, size);
@@ -228,7 +228,6 @@ int main()
             textScore.setString("score: "+std::to_string(score));
             textHeart.setString("hearts: "+std::to_string(heart));
             window.draw(textScore);
-            window.draw(textHeart);
             window.draw(textGameOver);
         } else{
             window.clear(Color::White);
